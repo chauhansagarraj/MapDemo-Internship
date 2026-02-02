@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+
+img {
+  width: 50px;
+}
+
+/* Conditional styling */
+.highPrice { background-color: #ffe0e0; }
+.fail { background-color: #ffcccc; }
+.pass { background-color: #ccffcc; }
+.outStock { background-color: #fdd; }
+.highSalary { background-color: #e0f7ff; }
+.topRated { background-color: #d4ffd4; }
+.status-active { color: green; font-weight: bold; }
+.status-inactive { color: red; font-weight: bold; }
+.dept-HR { background-color: #f0f8ff; }
+.category-Travel { font-style: italic; }
+.category-Home { font-weight: bold; }
+.availability-inStock { color: green; }
+.availability-outOfStock { color: red; }
