@@ -52,6 +52,11 @@ export const Navbar = () => {
                 Elite
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/teams">
+                Teams
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

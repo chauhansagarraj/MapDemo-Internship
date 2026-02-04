@@ -15,7 +15,10 @@ import { NetflixMovies } from './components/Navbar/Netflixmovies'
 import  NetflixElite  from './components/Navbar/NetflixElite'
 import NetflixLiked from './components/Navbar/NetflixLiked'
 import NetflixMostWatched from './components/Navbar/NetflixMostWatched'
-
+import WatchComp from './components/Navbar/WatchComp'
+import NotFoundComp from './components/Navbar/NotFoundComp'
+import TeamsComp from './components/DynamicRouting/TeamsComp'
+import TeamDetails from './components/DynamicRouting/TeamDetails'
 function App() {
 
   return (
@@ -36,6 +39,10 @@ function App() {
         <Route path="/netflixmostwatched" element={<NetflixMostWatched />} />
         <Route path="/netflixliked" element={<NetflixLiked />} />
         <Route path="/netflixelite" element={<NetflixElite />} />
+        <Route path="/watch/:name" element={<WatchComp />} />
+        <Route path="/*" element={<NotFoundComp />} />
+        <Route path="/teams" element={<TeamsComp />} />
+        <Route path="/teamDetails/:name" element={<TeamDetails />} />
       </Routes>
      </div>
     </>
